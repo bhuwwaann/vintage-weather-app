@@ -1,0 +1,14 @@
+{
+  "name": "weather-web-app",
+  "version": "1.0.0",
+  "description": "High-end weather web application",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0"
+  }
+}

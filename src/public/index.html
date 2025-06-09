@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="sky" class="sky-bg">
+    <div class="container">
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter city..." required />
+        <button type="submit">Search</button>
+      </form>
+      <div class="location">Delhi</div>
+      <div class="temperature">--°</div>
+      <div class="status">--</div>
+      <div class="details">
+        <p><strong>Feels Like:</strong> <span class="feelslike">--</span></p>
+        <p><strong>Humidity:</strong> <span class="humidity">--</span></p>
+        <p><strong>Wind:</strong> <span class="wind">--</span></p>
+        <p><strong>UV Index:</strong> <span class="uv">--</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>

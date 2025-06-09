@@ -1,0 +1,110 @@
+/* Base styles for the whole app */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e2e2e;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  font-family: 'Orbitron', 'Courier New', monospace;
+
+  /* Vintage filter effect */
+  filter: sepia(0.2) contrast(1.1) brightness(0.95) saturate(1.2);
+  transition: background-image 1.5s ease-in-out, filter 1s ease;
+
+  color: #f7d17f;
+  text-shadow: 1px 1px 2px #f5af2e;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-text-stroke: 1px black;
+
+}
+
+/* Background vintage tint overlay */
+.sky-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: sepia(0.4) contrast(0.9);
+  z-index: 0;
+}
+
+/* Main content card */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  background: rgba(250, 235, 215, 0.85);
+  border: 4px dashed #4e3b2b;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Search bar form */
+form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+input,
+button {
+  padding: 0.6rem 1rem;
+  border: 2px solid #2b1d0e;
+  background: antiquewhite;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #d9c39a;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b99f72;
+}
+
+/* City name */
+.location {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Temperature */
+.temperature {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Weather description */
+.status {
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Extra details */
+.details p {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+}
